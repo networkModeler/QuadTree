@@ -27,13 +27,13 @@ An example command line to run this test:
 
   quadtree xMin 0 yMin 0 xMax 1000 yMax 1000 maxNodeSize 10 numPoints 1000000 k 50
 
-  xMin, yMin, xMax, yMax: the bounding box for the entire quadtree (and the points it can contain)
+  - xMin, yMin, xMax, yMax: the bounding box for the entire quadtree (and the points it can contain)
   
-  maxNodeSize: the maximum number of points a quadtree node can contain before it must be split into four children
+  - maxNodeSize: the maximum number of points a quadtree node can contain before it must be split into four children
   
-  numPoints: the number of random points to generate and insert into the quadtree
+  - numPoints: the number of random points to generate and insert into the quadtree
   
-  k: the number of nearest neighbor points to find
+  - k: the number of nearest neighbor points to find
 
 Compiled with Microsoft Visual C++, tested on Windows 7.
 
