@@ -1,0 +1,43 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// heap.h : header file for fixed size heap class
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#ifndef ENTRY_H
+#define ENTRY_H
+
+#include "point.h"
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class Entry
+{
+    public:
+
+        // Default constructor
+        Entry();
+
+        // Constructor
+        Entry(int x, int y, double distance);
+
+        // Get the distance
+        double getDistance();
+
+        // Return true if given point has same coordinates as this entry
+        bool equivalent(Point* point);
+
+        // Print
+        void print();
+
+        // Compare function for priority queue, maximum element on top
+        bool operator()(Entry*& entry1, Entry*& entry2);
+
+    private:
+
+        int     x;
+        int     y;
+        double  distance;
+};
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#endif  ENTRY_H
